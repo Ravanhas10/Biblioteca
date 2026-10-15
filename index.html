@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Cadastro de Livro</h1>
+
+        <form id="livro-form" class="livro-form" novalidate>
+            <label for="titulo">Título</label>
+            <input id="titulo" name="titulo" type="text" required placeholder="Digite o título do livro">
+
+            <label for="autor">Autor</label>
+            <input id="autor" name="autor" type="text" placeholder="Digite o autor">
+
+            <button type="submit" id="save-btn">Salvar</button>
+        </form>
+
+        <div id="confirmation" class="confirmation" aria-live="polite" hidden></div>
+    </main>
+</body>
+</html>
