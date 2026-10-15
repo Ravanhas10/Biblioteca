@@ -53,3 +53,42 @@ h1{
     box-shadow:0 0 0 3px rgba(231,111,81,0.12);
     animation:shake .36s;
 }
+
+#save-btn{
+    margin-top:6px;
+    background:var(--accent);
+    color:#fff;
+    border:none;
+    padding:10px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:700;
+}
+
+#save-btn:hover{
+    opacity:0.96;
+}
+
+.confirmation{
+    margin-top:16px;
+    padding:12px 14px;
+    border-radius:8px;
+    background:#e6ffef;
+    color:#065f46;
+    box-shadow:0 1px 0 rgba(0,0,0,0.03);
+    opacity:0;
+    transform:translateY(-6px);
+    transition:opacity .28s ease, transform .28s ease;
+}
+
+.confirmation[hidden] {
+    display: none;
+}
+
+@keyframes shake{
+    0%{transform:translateX(0)}
+    25%{transform:translateX(-6px)}
+    50%{transform:translateX(6px)}
+    75%{transform:translateX(-4px)}
+    100%{transform:translateX(0)}
+}
